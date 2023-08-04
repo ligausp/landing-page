@@ -1,0 +1,461 @@
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat;
+  --principal-color: #390FAE;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+header span {
+  font-weight: 600;
+  font-size: 54px;
+  font-weight: bold;
+  color: white;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header a {
+  color: white;
+  font-size: 18px;
+  font-weight: medium;
+  margin-right: 16px;
+  transition: 0.2s;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+header button {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button {
+  color: white;
+  border: 0;
+  font-family: Montserrat;
+  background-color: var(--principal-color);
+  border-radius: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: 0.5s background-color;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #260978;
+}
+
+#headsection {
+  min-height: 100%;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 23px;
+  position: relative;
+}
+
+#headsection::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#headsection * {
+  z-index: 4;
+}
+
+#headsection-headlines {
+  flex: 1;
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  max-width: 922px;
+  font-weight: 800;
+  font-size: 70px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#headsection-headlines h2 {
+  max-width: 892px;
+  font-weight: 500;
+  font-size: 36px;
+  color: #D2D2D2;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+#headsection-headlines button, #find-course button, #plataforma button, #sobre-nos button, #certificado button {
+  width: 400px;
+  height: 53px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#universities, #follow-us {
+  background-image: url(../img/historia.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 48px;
+  padding-right: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#universities h2, #follow-us h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#universities p, #follow-us p {
+  max-width: 969px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #D2D2D2;
+  margin-bottom: 29px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+#universities div, #follow-us div {
+  max-width: 818px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#universities img, #follow-us img {
+  width: 90%;
+  max-width: 589px;
+  margin-right: 31px;
+  margin-bottom: 12px;
+}
+
+#universities img:last-child, #follow-us img:last-child {
+  margin-right: unset;
+}
+
+#goals {
+  background-image: url(../img/goals.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.section {
+  max-width: 1400px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.section h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.card-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+}
+
+.card-bottom {
+  border-radius: 16px;
+  background-color: #002F3D;
+  padding: 18px;
+}
+
+.card-top {
+  width: 100%;
+  height: 300px;
+  background-color: #00394B;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card-bottom h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.card-bottom p {
+  color: #D7D7D7;
+  font-size: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-top-background {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#card-top-mentoria {
+  background-image: url(../img/mentoria-texto.png);
+}
+
+#card-top-conexao {
+  background-image: url(../img/conexao-texto.png);
+}
+
+#card-top-inspirar {
+  background-image: url(../img/inspirar-texto.png);
+}
+
+#networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  gap: 40px;
+}
+
+#networks * {
+  color: white !important;
+}
+
+@media screen and (max-width: 728px) {
+  header {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header div {
+    display: none;
+  }
+
+  .card-list {
+    flex-direction: column;
+  }
+
+  #headsection, #universities, #vision, #find-course, #plataforma, #sobre-nos, #certificado, #follow-us {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #popular-contents, #courses {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  #popular-contents {
+    text-align: center;
+  }
+
+  #headsection-login {
+    display: block;
+  }
+
+  #headsection-headlines {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: unset;
+  }
+
+  #headsection-headlines h2 {
+    font-size: 20px;
+    line-height: unset;
+    text-align: center;
+  }
+
+  #headsection-headlines button, #find-course button, #plataforma button, #sobre-nos button, #certificado button {
+    width: 100%;
+  }
+  
+  .course-list {
+    flex-direction: column;
+  }
+
+  .course {
+    margin-bottom: 14px;
+  }
+
+  #vision {
+    flex-direction: column;
+  }
+
+  #vision img {
+    display: none;
+  }
+
+  #vision div {
+    padding: unset;
+  }
+
+  #vision div h2 {
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+  }
+
+  #vision div p {
+    font-size: 22px;
+    line-height: unset;
+    text-align: center;
+  }
+
+  .popular-contents-list {
+    flex-direction: column;
+  }
+
+  .popular-contents-list div {
+    margin-right: unset;
+    margin-bottom: 12px;
+  }
+
+  #find-course, #plataforma, #sobre-nos, #certificado {
+    text-align: center;
+  }
+
+  #find-course h2, #plataforma h2, #sobre-nos h2, #certificado h2 {
+    font-size: 50px;
+    line-height: unset;
+  }
+
+  #find-course img {
+    display: none;
+  }
+
+  #footer-header {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #networks {
+    display: none;
+  }
+
+  .footer-verticals {
+    flex-direction: column;
+  }
+
+  .footer-vertical {
+    margin-bottom: 20px;
+    margin-right: unset;
+  }
+
+  .course-list {
+    align-items: center;
+  }
+
+  .course {
+    width: 100%;
+  }
+
+  #plataforma, #sobre-nos, #certificado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #plataforma h2, #sobre-nos h2, #certificado h2 {
+    text-align: center;
+  }
+
+  #plataforma-div, #certificado-div {
+    flex: unset;
+  }
+
+  #plataforma img, #platform-div, #certificado img, #certificado-div {
+    width: 100%;
+    margin: 0;
+  }
+
+  #platform-div, #certificado-div {
+    margin-bottom: 28px;
+  }
+
+  #plataforma div:last-child, #sobre-nos div:last-child, #certificado div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre-nos {
+    justify-content: center;
+  }
+
+  #sobre-nos img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  #universities div, #follow-us div {
+    flex-direction: column;
+  }
+
+  #universities div img, #follow-us div img {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
