@@ -195,8 +195,8 @@ h1 {
 
 .section {
   max-width: 1400px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .section h3 {
@@ -327,6 +327,14 @@ h1 {
     text-align: center;
   }
 
+  .section h3 {
+    font-size: 40px;
+  }
+
+  #universities p, #follow-us p {
+    font-size: 20px; 
+  }
+
   #headsection-headlines button, #find-course button, #plataforma button, #sobre-nos button, #certificado button {
     width: 100%;
   }
@@ -450,7 +458,7 @@ h1 {
     margin-bottom: 28px;
   }
 
-  #universities div, #follow-us div {
+  #universities div {
     flex-direction: column;
   }
 
